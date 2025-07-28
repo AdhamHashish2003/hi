@@ -1,0 +1,13 @@
+{
+  "name": "hi",
+  "version": "1.0.0",
+  "description": "This is a simple web page that allows you to track the current value of an investment. Enter the asset ID (as used on CoinGecko), the price you bought it at in USD, and the number of units. The page fetches the latest price and calculates your current value and profit/loss.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
