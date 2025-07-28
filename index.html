@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Tracker</h1>
+        <form id="investment-form">
+            <label for="asset">Asset ID (CoinGecko): </label>
+            <input type="text" id="asset" required placeholder="bitcoin">
+            <label for="price">Buy Price (USD): </label>
+            <input type="number" step="0.01" id="price" required>
+            <label for="units">Units: </label>
+            <input type="number" step="0.0001" id="units" required>
+            <button type="submit">Track</button>
+        </form>
+        <div id="result" class="hidden">
+            <p><strong>Current Price:</strong> $<span id="current-price"></span></p>
+            <p><strong>Value:</strong> $<span id="current-value"></span></p>
+            <p><strong>Profit/Loss:</strong> $<span id="profit-loss"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
