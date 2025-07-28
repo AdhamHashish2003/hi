@@ -5,3 +5,15 @@ This is a simple web page that allows you to track the current value of an inves
 ## Usage
 
 Open `index.html` in a web browser. Fill in the form with your asset information and click **Track** to retrieve the latest price.
+
+## Real Estate Bot
+
+A simple script `real_estate_bot.py` demonstrates how you might analyze Dubai real estate investments. It uses a small sample dataset `dubai_real_estate.csv` and a basic linear regression (implemented without external libraries) to estimate return on investment (ROI). The script prints the top ten properties with the highest predicted ROI.
+
+Run the bot with:
+
+```bash
+python3 real_estate_bot.py
+```
+
+The dataset is illustrative only; replace it with real data to perform meaningful analysis.
