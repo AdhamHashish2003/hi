@@ -37,6 +37,10 @@ class ListingScraper:
                         .replace(",", "")
                         .replace("AED", "")
                     )
+                    link_tag = card.select_one("a")
+                    img_tag = card.select_one("img")
+                    url = link_tag["href"] if link_tag else None
+                    image_url = img_tag["src"] if img_tag else None
                     details = card.select("span")
                     bedrooms = bathrooms = sqft = None
                     for d in details:
@@ -57,6 +61,8 @@ class ListingScraper:
                             "furnishing": None,
                             "listing_type": "Sale",
                             "rental_price": None,
+                            "url": url,
+                            "image_url": image_url,
                         }
                     )
                 except Exception:

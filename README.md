@@ -25,3 +25,4 @@ python -m real_estate_pipeline.main
 ```
 
 A report will be generated in the `reports/` directory. If scraping is blocked, sample data will be used automatically.
+The pipeline also writes an `index.html` file with property links and images for quick browsing.

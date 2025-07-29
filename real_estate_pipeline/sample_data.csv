@@ -1,6 +1,6 @@
-location,price,bedrooms,bathrooms,sqft,furnishing,listing_type,rental_price
-Dubai Marina,1500000,2,2,1200,Furnished,Sale,120000
-Downtown Dubai,2500000,3,3,1800,Unfurnished,Sale,
-Jumeirah Village Circle,800000,1,1,900,Semi-Furnished,Sale,60000
-Business Bay,1700000,2,2,1100,Furnished,Sale,130000
-Palm Jumeirah,3000000,3,4,2200,Furnished,Sale,240000
+location,price,bedrooms,bathrooms,sqft,furnishing,listing_type,rental_price,url,image_url
+Dubai Marina,1500000,2,2,1200,Furnished,Sale,150000,https://example.com/marina,https://via.placeholder.com/150?text=Marina
+Downtown Dubai,2500000,3,3,1800,Unfurnished,Sale,,https://example.com/downtown,https://via.placeholder.com/150?text=Downtown
+Jumeirah Village Circle,800000,1,1,900,Semi-Furnished,Sale,80000,https://example.com/jvc,https://via.placeholder.com/150?text=JVC
+Business Bay,1700000,2,2,1100,Furnished,Sale,160000,https://example.com/businessbay,https://via.placeholder.com/150?text=Business+Bay
+Palm Jumeirah,3000000,3,4,2200,Furnished,Sale,270000,https://example.com/palm,https://via.placeholder.com/150?text=Palm
