@@ -15,12 +15,14 @@ FIELDS = [
     "price",
     "rental_income",
     "property_type",
+    "listing_url",
 ]
 
 
 class ListingParser(HTMLParser):
-    def __init__(self):
+    def __init__(self, page_url=""):
         super().__init__()
+        self.page_url = page_url
         self.listings = []
 
     def handle_starttag(self, tag, attrs):
@@ -38,6 +40,7 @@ class ListingParser(HTMLParser):
                 "price": attr.get("data-price", "0"),
                 "rental_income": attr.get("data-rental", "0"),
                 "property_type": attr.get("data-type", ""),
+                "listing_url": attr.get("data-link", self.page_url),
             }
         )
 
@@ -56,7 +59,7 @@ def scrape_urls(urls, output_csv="dubai_real_estate.csv"):
     all_rows = []
     for url in urls:
         html = fetch_content(url)
-        parser = ListingParser()
+        parser = ListingParser(page_url=url)
         parser.feed(html)
         all_rows.extend(parser.listings)
 

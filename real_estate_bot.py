@@ -91,8 +91,11 @@ def main():
     data.sort(key=lambda r: r['predicted_roi'], reverse=True)
     print('Top 10 Investment Opportunities (predicted ROI):')
     for row in data[:10]:
-        print(f"{row['property_id']} - Location: {row['location']} - Price: {row['price']} - "
-              f"Rental: {row['rental_income']} - Predicted ROI: {row['predicted_roi']:.4f}")
+        print(
+            f"{row['property_id']} - Location: {row['location']} - Price: {row['price']} - "
+            f"Rental: {row['rental_income']} - Predicted ROI: {row['predicted_roi']:.4f} - "
+            f"Link: {row.get('listing_url', 'N/A')}"
+        )
 
 if __name__ == '__main__':
     if '--scrape' in sys.argv or not os.path.exists(DATA_FILE):

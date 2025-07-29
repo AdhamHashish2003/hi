@@ -1,21 +1,21 @@
-property_id,location,bedrooms,size_sqft,price,rental_income,property_type
-P1,Downtown,2,900,1500000,90000,apartment
-P2,Dubai Marina,3,1300,2200000,150000,apartment
-P3,Jumeirah,4,2500,3500000,210000,villa
-P4,Business Bay,1,750,1200000,70000,apartment
-P5,Palm Jumeirah,5,4500,8000000,480000,villa
-P6,Dubai Creek,2,1100,1700000,100000,apartment
-P7,Arabian Ranches,3,1800,2500000,160000,villa
-P8,DIFC,2,1000,1900000,110000,apartment
-P9,Deira,1,700,1000000,60000,apartment
-P10,Al Barsha,3,1600,2400000,150000,villa
-P11,Dubai Sports City,2,1200,1600000,90000,apartment
-P12,Silicon Oasis,1,800,900000,55000,apartment
-P13,Dubai Hills,4,3000,4200000,250000,villa
-P14,International City,1,600,700000,45000,apartment
-P15,JLT,2,950,1700000,105000,apartment
-P16,Emirates Hills,6,6000,12000000,720000,villa
-P17,Al Quoz,3,1400,2300000,140000,villa
-P18,Discovery Gardens,1,750,800000,50000,apartment
-P19,Mirdif,3,1500,2100000,130000,villa
-P20,Motor City,2,1100,1600000,95000,apartment
+property_id,location,bedrooms,size_sqft,price,rental_income,property_type,listing_url
+P1,Downtown,2,900,1500000,90000,apartment,http://example.com/P1
+P2,Dubai Marina,3,1300,2200000,150000,apartment,http://example.com/P2
+P3,Jumeirah,4,2500,3500000,210000,villa,http://example.com/P3
+P4,Business Bay,1,750,1200000,70000,apartment,http://example.com/P4
+P5,Palm Jumeirah,5,4500,8000000,480000,villa,http://example.com/P5
+P6,Dubai Creek,2,1100,1700000,100000,apartment,http://example.com/P6
+P7,Arabian Ranches,3,1800,2500000,160000,villa,http://example.com/P7
+P8,DIFC,2,1000,1900000,110000,apartment,http://example.com/P8
+P9,Deira,1,700,1000000,60000,apartment,http://example.com/P9
+P10,Al Barsha,3,1600,2400000,150000,villa,http://example.com/P10
+P11,Dubai Sports City,2,1200,1600000,90000,apartment,http://example.com/P11
+P12,Silicon Oasis,1,800,900000,55000,apartment,http://example.com/P12
+P13,Dubai Hills,4,3000,4200000,250000,villa,http://example.com/P13
+P14,International City,1,600,700000,45000,apartment,http://example.com/P14
+P15,JLT,2,950,1700000,105000,apartment,http://example.com/P15
+P16,Emirates Hills,6,6000,12000000,720000,villa,http://example.com/P16
+P17,Al Quoz,3,1400,2300000,140000,villa,http://example.com/P17
+P18,Discovery Gardens,1,750,800000,50000,apartment,http://example.com/P18
+P19,Mirdif,3,1500,2100000,130000,villa,http://example.com/P19
+P20,Motor City,2,1100,1600000,95000,apartment,http://example.com/P20

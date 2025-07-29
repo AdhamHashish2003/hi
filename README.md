@@ -16,12 +16,17 @@ To build the dataset from several listing pages (or example HTML files), run:
 python3 scrape_dubai_listings.py
 ```
 
-This combines all listings into `dubai_real_estate.csv`.
+This combines all listings into `dubai_real_estate.csv`. The resulting CSV
+includes a `listing_url` column pointing to the page where each property was
+found.
 
 Run the bot with:
 
 ```bash
 python3 real_estate_bot.py
 ```
+
+The bot prints the top 10 properties along with the URL where each listing was
+scraped.
 
 The dataset is illustrative only; replace it with real data to perform meaningful analysis.
