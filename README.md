@@ -1,7 +1,27 @@
-# Investment Tracker
+# Investment Tracker and Real Estate Pipeline
 
-This is a simple web page that allows you to track the current value of an investment. Enter the asset ID (as used on CoinGecko), the price you bought it at in USD, and the number of units. The page fetches the latest price and calculates your current value and profit/loss.
+This repository contains a simple investment tracker web page as well as a Python-based data pipeline for analyzing Dubai real estate opportunities.
 
-## Usage
-
+## Web Page
 Open `index.html` in a web browser. Fill in the form with your asset information and click **Track** to retrieve the latest price.
+
+## Dubai Real Estate Pipeline
+The `real_estate_pipeline` package provides tools to scrape or load sample Dubai property listings, calculate key financial metrics, and generate a daily investment report.
+
+### Running the Pipeline
+Ensure Python 3.8+ is installed. Install dependencies:
+
+```bash
+pip install pandas beautifulsoup4 requests matplotlib fpdf googlemaps
+```
+
+Set the `GOOGLE_MAPS_API_KEY` environment variable if you want the pipeline to
+geocode properties.
+
+Then run:
+
+```bash
+python -m real_estate_pipeline.main
+```
+
+A report will be generated in the `reports/` directory. If scraping is blocked, sample data will be used automatically.
