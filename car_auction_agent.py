@@ -5,14 +5,11 @@ import openai
 """A simple command-line tool that uses OpenAI's assistant (agent) API
    to search for car auctions and check industry averages.
 
-   You must provide an OPENAI_API_KEY environment variable for this to work.
+   Your API key is now hardcoded for convenience.
 """
 
-# Ensure API key
-if not os.getenv("OPENAI_API_KEY"):
-    raise EnvironmentError("Please set the OPENAI_API_KEY environment variable")
-
-openai.api_key = os.environ["OPENAI_API_KEY"]
+# Inserted API key directly
+openai.api_key = "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"
 
 # Prompt user for car details
 car = input("Enter the make and model of the car you're looking for: ")
